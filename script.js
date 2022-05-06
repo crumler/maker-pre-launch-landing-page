@@ -1,11 +1,17 @@
 const email = document.getElementById('email');
 const emailField = document.querySelector('.email');
-const mailFormat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+let regex = new RegExp(/^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i);
+const success = document.getElementById('success');
+const warning = document.getElementById('warn');
 
 function validateEmail(emailField) {
-  if (emailField.value.match(mailFormat)) {
-    alert("Thank you for signing up!")
+  event.preventDefault();
+
+  if (email.value.match(regex)) {
+    success.style.display = 'block';
+    warning.style.display = 'none';
   } else {
-    alert("Oops!  That doesn't look like an email address")
+    warning.style.display = 'block';
+    success.style.display = 'none';
   };
 };
