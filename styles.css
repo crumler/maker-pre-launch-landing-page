@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+
+:root {
+  /* ----- Colors ----- */
+  --light-blue: hsl(179deg, 80%, 58%);
+  --dark-blue: hsl(206deg, 84%, 22%);
+  --gray: hsl(225deg, 14%, 53%);
+  --white: hsl(0deg, 0%, 100%);
+  --navy-blue: hsl(230deg, 60%, 8%);
+  --red: hsl(343deg, 100%, 58%);
+
+  /* ----- Typography ----- */
+  --h1-fs: 3.2rem;
+  --h2-fs: 2.667rem;
+  --h3-fs: 2.133rem;
+  --h4-fs: 1.2rem;
+
+  --h1-lh: 3.733rem;
+  --h2-lh: 3.667rem;
+  --h3-lh: 2.933rem;
+  --h4-hl: 1.667rem;
+  --p-lh: 1.667rem;
+}
+
+/* ----- Resets ----- */
+*,*::before,*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ----- Typography ----- */
+html {
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  background-color: var(--navy-blue);
+}
+
+h1, h2, h3, h4 {
+  color: var(--white);
+  font-weight: 800;
+}
+
+h1 {
+  font-size: var(--h1-fs);
+  line-height: var(--h1-lh);
+}
+
+h2 {
+  font-size: var(--h2-fs);
+  line-height: var(--h2-lh);
+}
+
+h3 {
+  font-size: var(--h3-fs);
+  line-height: var(--h3-lh);
+}
+
+h4 {
+  font-size: var(--h4-fs);
+  line-height: var(--h4-lh);
+}
+
+p {
+  color: var(--gray);
+  line-height: var(--p-lh);
+}
+
+/* ----- Global ----- */
+img { max-width: 100%; }
+
+/* ----- Utilities ----- */
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.row { display: flex; }
+
+.center-content { justify-content: center; }
+
+.text-center { text-align: center; }
+
+span { color: var(--light-blue); }
+
+/* ----- Header ----- */
+.company_name_container {
+  margin-top: 2.667em;
+  margin-bottom: 4.36em;
+  /* flex-direction: column; */
+}
+
+.mobile_bg_img {
+  background-image: url(./assets/illustration-hero-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 320px;
+  max-width: 420px;
+  min-height: 233px;
+  margin: 0 auto;
+}
+
+.header_text_container {
+  margin-top: 3.16em;
+}
+
+.header_text_container p,
+.header_text_container img {
+  margin-top: 1.5em;
+}
+
+/* ----- Pointers ----- */
+.pointers {
+  margin-top: 9.6em;
+}
+
+.pointers-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+  height: 8.27em;
+  background-color: var(--dark-blue);
+  /* padding: 1.47em 2em; */
+  border-radius: 3em;
+  margin: 0 auto;
+}
+
+.pointers--icon {
+  width: 60%;
+  height: auto;
+}
+
+.pointers--heading {
+  margin: 2.13em 0 0.73em 0;
+}
+
+.pointers--description { margin-bottom: 3.73em; }
+
+/* ----- Pricing Section ----- */
+.pricing {
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__heading { margin-top: 4.8em; }
+
+.pricing__description { margin-top: 1.8em; }
+
+.pricing-container {
+  position: relative;
+  margin-top: 3.73em;
+  width: 21.8em;
+  border-radius: 0.53em;
+}
+
+.pricing-container--free { background-color: var(--dark-blue); }
+
+.pricing-container--paid {
+  background-color: var(--light-blue);
+  margin-top: 4.26em;
+}
+
+.icon-free {
+  position: absolute;
+  top: -5%;
+  left: 17%;
+}
+
+.icon-paid {
+  position: absolute;
+  top: -8%;
+  left: 17%;
+}
+
+.pricing-text-container {
+  width: 90%;
+  padding-left: 3em;
+  padding-top: 3.27em;
+}
+
+.pricing-text-container h4 {
+  margin-bottom: 1.27em;
+}
+
+.pricing-text-container p {
+  margin-bottom: 1.73em;
+}
+
+.pricing__pointers {
+  list-style: none;
+  margin-top: 1.26em;
+}
+
+.pricing__pointers--free {
+  color: var(--white);
+}
+
+.pricing__pointers--paid {
+  color: var(--navy-blue);
+}
+
+.pricing-text-container--paid h2,
+.pricing-text-container--paid h4,
+.pricing-text-container--paid p { color: var(--navy-blue); }
+
+.pricing__pointers--points { margin-bottom: 0.8em; }
+
+.pricing__pointers--points:last-child {
+  margin: 0;
+  padding-bottom: 2.13em;
+}
+
+.pricing__pointers--checkmark {
+  margin-right: 1.02em;
+}
+
+.month {
+  color: var(--navy-blue);
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+
+.paid--fee {
+  align-items: center;
+}
+
+/* ----- Footer ----- */
+.footer {
+  background-image: url(./assets/bg-footer-squiggle.svg);
+  background-size: cover;
+  margin-top: 7.93em;
+}
+
+form {
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  width: 21.33em;
+  height: 3.2em;
+  border-radius: 1.6em;
+  text-indent: 1.2em;
+  margin: 2.06em 0 1.6em 0;
+}
+
+.btn {
+  cursor: pointer;
+  width: 21.33em;
+  height: 3.2em;
+  font-weight: 800;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  border: none;
+  border-radius: 1.6em;
+  margin-bottom: 10.93em;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  border: 2px solid var(--light-blue);
+  background-color: var(--navy-blue);
+  color: var(--white);
+}
