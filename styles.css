@@ -92,6 +92,9 @@ span { color: var(--light-blue); }
   /* flex-direction: column; */
 }
 
+.bg_img_left_container,
+.bg_img_right_container { display: none; }
+
 .mobile_bg_img {
   background-image: url(./assets/illustration-hero-mobile.png);
   background-size: cover;
@@ -104,6 +107,7 @@ span { color: var(--light-blue); }
 
 .header_text_container {
   margin-top: 3.16em;
+  /* border: 2px solid red; */
 }
 
 .header_text_container p,
@@ -279,4 +283,45 @@ form input {
   display: none;
   margin-top: 0.26em;
   color: var(--red);
+}
+
+/* ----- Media Queries ----- */
+
+@media (min-width: 768px) {
+  .mobile_bg_img {
+    display: none;
+  }
+
+  .company_name_container.center-content {
+    justify-content: flex-start;
+  }
+
+  .bg_img_left_container {
+    display: block;
+    background-image: url(./assets/illustration-hero-left.svg);
+    background-size: cover;
+    position: absolute;
+    min-height: 20.93em;
+    min-width: 23.73em;
+    /* height: 50%;
+    width: 23.8em; */
+    z-index: -1;
+    left: -23%;
+  }
+
+  .bg_img_right_container {
+    display: block;
+    background-image: url(./assets/illustration-hero-right.svg);
+    position: absolute;
+    min-height: 20.93em;
+    min-width: 23.73em;
+    /* height: 50%;
+    width: 23.8em; */
+    z-index: -1;
+    right: -23%;
+  }
+
+  .header_text_container {
+    width: 60%;
+  }
 }
