@@ -3,6 +3,7 @@
 
 :root {
   /* ----- Colors ----- */
+  
   --light-blue: hsl(179deg, 80%, 58%);
   --dark-blue: hsl(206deg, 84%, 22%);
   --gray: hsl(225deg, 14%, 53%);
@@ -11,11 +12,14 @@
   --red: hsl(343deg, 100%, 58%);
 
   /* ----- Typography ----- */
+
+  /* Font Size */
   --h1-fs: 3.2rem;
   --h2-fs: 2.667rem;
   --h3-fs: 2.133rem;
   --h4-fs: 1.2rem;
 
+  /* Line Height */
   --h1-lh: 3.733rem;
   --h2-lh: 3.667rem;
   --h3-lh: 2.933rem;
@@ -24,6 +28,7 @@
 }
 
 /* ----- Resets ----- */
+
 *,*::before,*::after {
   box-sizing: border-box;
   padding: 0;
@@ -31,6 +36,7 @@
 }
 
 /* ----- Typography ----- */
+
 html {
   font-family: 'Manrope', sans-serif;
   font-size: 15px;
@@ -68,9 +74,11 @@ p {
 }
 
 /* ----- Global ----- */
+
 img { max-width: 100%; }
 
 /* ----- Utilities ----- */
+
 .container {
   width: 80%;
   max-width: 1440px;
@@ -101,16 +109,17 @@ header { overflow: hidden; }
   background-image: url(./assets/bg-hero-squiggle.svg);
   background-size: cover;
   margin-top: 3.16em;
-  /* border: 2px solid red; */
 }
 
 .header_text_container p,
-.header_text_container img {
-  margin-top: 1.5em;
-}
+.header_text_container img { margin-top: 1.5em; }
 
-/* ----- Pointers ----- */
+/* ----- Pointers section ----- */
+
 .pointers {
+  display: grid;
+  justify-content: center;
+  align-content: center;
   margin-top: 9.6em;
 }
 
@@ -121,7 +130,6 @@ header { overflow: hidden; }
   width: 8.26em;
   height: 8.27em;
   background-color: var(--dark-blue);
-  /* padding: 1.47em 2em; */
   border-radius: 3em;
   margin: 0 auto;
 }
@@ -131,13 +139,12 @@ header { overflow: hidden; }
   height: auto;
 }
 
-.pointers--heading {
-  margin: 2.13em 0 0.73em 0;
-}
+.pointers--heading { margin: 2.13em 0 0.73em 0; }
 
 .pointers--description { margin-bottom: 3.73em; }
 
 /* ----- Pricing Section ----- */
+
 .pricing {
   flex-direction: column;
   align-items: center;
@@ -192,14 +199,9 @@ header { overflow: hidden; }
   margin-top: 1.26em;
 }
 
-.pricing__pointers--free {
-  color: var(--white);
-  
-}
+.pricing__pointers--free { color: var(--white); }
 
-.pricing__pointers--paid {
-  color: var(--navy-blue);
-}
+.pricing__pointers--paid { color: var(--navy-blue); }
 
 .pricing-text-container--paid h2,
 .pricing-text-container--paid h4,
@@ -212,9 +214,7 @@ header { overflow: hidden; }
   padding-bottom: 2.13em;
 }
 
-.pricing__pointers--checkmark {
-  margin-right: 1.02em;
-}
+.pricing__pointers--checkmark { margin-right: 1.02em; }
 
 .month {
   color: var(--navy-blue);
@@ -222,11 +222,10 @@ header { overflow: hidden; }
   margin-left: 0.5em;
 }
 
-.paid--fee {
-  align-items: center;
-}
+.paid--fee { align-items: center; }
 
 /* ----- Footer ----- */
+
 .footer {
   background-image: url(./assets/bg-footer-squiggle.svg);
   background-size: cover;
@@ -234,6 +233,8 @@ header { overflow: hidden; }
   margin-top: 7.93em;
   margin-bottom: 10.93em;
 }
+
+/* ----- Signup Form ----- */
 
 form {
   flex-direction: column;
@@ -292,13 +293,9 @@ form input {
   html { overflow-x: hidden; }
 
   /* ----- Header ----- */
-  .mobile_bg_img {
-    display: none;
-  }
+  .mobile_bg_img { display: none; }
 
-  .company_name_container.center-content {
-    justify-content: flex-start;
-  }
+  .company_name_container.center-content { justify-content: flex-start; }
 
   .hero__bg__container {
     display: grid;
@@ -312,33 +309,22 @@ form input {
   }
 
   .bg_img_left_container img,
-  .bg_img_right_container img {
-    max-width: 21.3em;
-  }
+  .bg_img_right_container img { max-width: 21.3em; }
 
-  .bg_img_right_container {
-    display: block;
-  }
+  .bg_img_right_container { display: block; }
 
-  .header_text_container {
-    /* position: relative; */
-    width: 100%;
-  }
+  .header_text_container { width: 100%; }
 
   /* ----- Pointers section ----- */
 
-  .pointers__container {
-    flex-direction: column;
-  }
+  .pointers__container { flex-direction: column; }
 
   .pointer {
     display: flex;
     align-items: center;
   }
 
-  .pointer:nth-child(odd) {
-    margin-left: 3.86em;
-  }
+  .pointer:nth-child(odd) { margin-left: 3.86em; }
 
   .pointers-icon-container {
     margin-right: 3.66em;
@@ -346,32 +332,29 @@ form input {
     width: 12em;
   }
 
-  .pointer__text {
-    text-align: left;
-  }
+  .pointer__text { text-align: left; }
+
+  /* ----- Signup Form ----- */
 
   form {
     flex-direction: row;
     justify-content: center;
     margin-top: 2.8em;
     gap: 1.06em;
-    /* align-items: center; */
   }
 
-  form input {
-    margin: 0;
-  }
+  form input { margin: 0; }
 
-  .btn {
-    width: 9.33em;
-  }
+  .btn { width: 9.33em; }
 }
 
 /* ----- Desktop ----- */
 @media (min-width: 1440px) {
-  .header_text_container {
-    width: 60%;
-  }
+
+  /* ----- Header section ----- */
+  .header_text_container { width: 60%; }
+
+  /* ----- Pointers section ----- */
 
   .pointers__container {
     display: flex;
@@ -390,17 +373,13 @@ form input {
     width: 10.93em;
   }
 
-  .pointer:nth-child(odd) {
-    margin: 0;
-  }
+  .pointer:nth-child(odd) { margin: 0; }
 
-  .pointer:nth-child(even) {
-    margin-top: 3.86em;
-  }
+  .pointer:nth-child(even) { margin-top: 3.86em; }
 
-  .pricing__header__container {
-    width: 40%;
-  }
+  /* ----- Pricing section ----- */
+
+  .pricing__header__container { width: 40%; }
 
   .pricing__options__container {
     display: flex;
@@ -409,29 +388,20 @@ form input {
 
   .pricing-container {
     display: flex;
-    /* align-items: center; */
     margin-top: 4.8em;
     width: 29.66em;
   }
 
-  .pricing-container--paid {
-    margin-top: 3.81rem;
-  }
+  .pricing-container--paid { margin-top: 3.81rem; }
 
-  .pricing-container--free {
-    /* align-content: center; */
-  }
+  /* ----- Signup Form ----- */
 
   form {
     flex-direction: row;
     justify-content: center;
     margin-top: 2.8em;
     gap: 1.06em;
-    /* align-items: center; */
   }
 
-  form input {
-    margin: 0;
-  }
-
+  form input { margin: 0; }
 }
