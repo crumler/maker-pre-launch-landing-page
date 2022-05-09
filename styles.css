@@ -86,24 +86,16 @@ img { max-width: 100%; }
 span { color: var(--light-blue); }
 
 /* ----- Header ----- */
+
+header { overflow: hidden; }
+
 .company_name_container {
   margin-top: 2.667em;
   margin-bottom: 4.36em;
-  /* flex-direction: column; */
 }
 
 .bg_img_left_container,
 .bg_img_right_container { display: none; }
-
-.mobile_bg_img {
-  background-image: url(./assets/illustration-hero-mobile.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-width: 320px;
-  max-width: 420px;
-  min-height: 233px;
-  margin: 0 auto;
-}
 
 .header_text_container {
   margin-top: 3.16em;
@@ -124,7 +116,7 @@ span { color: var(--light-blue); }
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8em;
+  width: 8.26em;
   height: 8.27em;
   background-color: var(--dark-blue);
   /* padding: 1.47em 2em; */
@@ -200,6 +192,7 @@ span { color: var(--light-blue); }
 
 .pricing__pointers--free {
   color: var(--white);
+  
 }
 
 .pricing__pointers--paid {
@@ -235,6 +228,7 @@ span { color: var(--light-blue); }
 .footer {
   background-image: url(./assets/bg-footer-squiggle.svg);
   background-size: cover;
+  width: 100%;
   margin-top: 7.93em;
   margin-bottom: 10.93em;
 }
@@ -262,9 +256,9 @@ form input {
   font-weight: 800;
   background-color: var(--light-blue);
   color: var(--dark-blue);
-  border: none;
+  border: 2px solid var(--light-blue);
   border-radius: 1.6em;
-  transition: all 0.4s;
+  transition: border 0.4s, background-color 0.4s, color 0.4s;
 }
 
 .btn:hover {
@@ -285,9 +279,17 @@ form input {
   color: var(--red);
 }
 
-/* ----- Media Queries ----- */
+/* ========================= */
+/* ===== MEDIA QUERIES ===== */
+/* ========================= */
+
+/* ----- Tablet ----- */
 
 @media (min-width: 768px) {
+
+  html { overflow-x: hidden; }
+
+  /* ----- Header ----- */
   .mobile_bg_img {
     display: none;
   }
@@ -296,32 +298,138 @@ form input {
     justify-content: flex-start;
   }
 
+  .hero__bg__container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+
   .bg_img_left_container {
     display: block;
-    background-image: url(./assets/illustration-hero-left.svg);
-    background-size: cover;
-    position: absolute;
-    min-height: 20.93em;
-    min-width: 23.73em;
-    /* height: 50%;
-    width: 23.8em; */
-    z-index: -1;
-    left: -23%;
+    direction: rtl;
+  }
+
+  .bg_img_left_container img,
+  .bg_img_right_container img {
+    max-width: 21.3em;
   }
 
   .bg_img_right_container {
     display: block;
-    background-image: url(./assets/illustration-hero-right.svg);
-    position: absolute;
-    min-height: 20.93em;
-    min-width: 23.73em;
-    /* height: 50%;
-    width: 23.8em; */
-    z-index: -1;
-    right: -23%;
   }
 
   .header_text_container {
+    /* position: relative; */
+    width: 100%;
+  }
+
+  /* ----- Pointers section ----- */
+
+  .pointers__container {
+    flex-direction: column;
+  }
+
+  .pointer {
+    display: flex;
+    align-items: center;
+  }
+
+  .pointer:nth-child(odd) {
+    margin-left: 3.86em;
+  }
+
+  .pointers-icon-container {
+    margin-right: 3.66em;
+    height: 8.5em;
+    width: 12em;
+  }
+
+  .pointer__text {
+    text-align: left;
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.8em;
+    gap: 1.06em;
+    /* align-items: center; */
+  }
+
+  form input {
+    margin: 0;
+  }
+
+  .btn {
+    width: 9.33em;
+  }
+}
+
+/* ----- Desktop ----- */
+@media (min-width: 1440px) {
+  .header_text_container {
     width: 60%;
   }
+
+  .pointers__container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .pointer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pointers-icon-container {
+    margin: 0;
+    height: 10.66em;
+    width: 10.93em;
+  }
+
+  .pointer:nth-child(odd) {
+    margin: 0;
+  }
+
+  .pointer:nth-child(even) {
+    margin-top: 3.86em;
+  }
+
+  .pricing__header__container {
+    width: 40%;
+  }
+
+  .pricing__options__container {
+    display: flex;
+    gap: 2em;
+  }
+
+  .pricing-container {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 4.8em;
+    width: 29.66em;
+  }
+
+  .pricing-container--paid {
+    margin-top: 3.81rem;
+  }
+
+  .pricing-container--free {
+    /* align-content: center; */
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.8em;
+    gap: 1.06em;
+    /* align-items: center; */
+  }
+
+  form input {
+    margin: 0;
+  }
+
 }

@@ -12,108 +12,139 @@
 <body>
   <header>
     <div class="company_name_container container row center-content">
-      <img src="./assets/logo.svg" alt="Company Logo">
+      <img src="./assets/logo.svg" alt="Company Logo" class="logo">
     </div>
-    
-    <div class="mobile_bg_img"></div>
 
-    <div class="header_text_container container text-center">
+    <div class="hero__bg__container">
+      <img src="./assets/illustration-hero-mobile.png" alt="" class="mobile_bg_img">
       <div class="bg_img_left_container">
-        <!-- <img src="./assets/illustration-hero-left.svg" alt="Background Image"> -->
+        <img src="./assets/illustration-hero-left.svg" alt="Background Image">
+      </div>
+
+      <div class="header_text_container container text-center">
+
+        <h1>Get paid for the work you <span>love</span> to do.</h1>
+  
+        <p>The 9-5 grind is so last century. We believe in living life on your 
+          own terms. Whether you’re looking to escape the rat race or set up 
+          a side hustle, we’ve got you covered.</p>
+  
+        <img src="./assets/icon-scroll.svg" alt="Scroll Icon">
+
       </div>
       <div class="bg_img_right_container">
-        <!-- <img src="./assets/illustration-hero-right.svg" alt="Background Image"> -->
+        <img src="./assets/illustration-hero-right.svg" alt="Background Image">
       </div>
-      <h1>Get paid for the work you <span>love</span> to do.</h1>
-
-      <p>The 9-5 grind is so last century. We believe in living life on your 
-        own terms. Whether you’re looking to escape the rat race or set up 
-        a side hustle, we’ve got you covered.</p>
-
-      <img src="./assets/icon-scroll.svg" alt="Scroll Icon">
     </div>
-
-
   </header>
 
   <main class="container">
     <section class="pointers">
-      <div class="pointers text-center">
-        <div class="pointers-icon-container">
-          <img class="pointers--icon" src="./assets/illustration-passions.svg" alt="Egg Painting">
+      <div class="pointers__container text-center">
+        <div class="pointer">
+          <div class="pointers-icon-container">
+            <img class="pointers--icon" src="./assets/illustration-passions.svg" alt="Egg Painting">
+          </div>
+          <div class="pointer__text">
+            <h4 class="pointers--heading">Indulge your passions</h4>
+            <p class="pointers--description">Your passions shouldn't be just for the weekend. Earn a living doing what you love.</p>
+          </div>
+
         </div>
-        <h4 class="pointers--heading">Indulge your passions</h4>
-        <p class="pointers--description">Your passions shouldn't be just for the weekend. Earn a living doing what you love.</p>
         
-        <div class="pointers-icon-container">
-          <img class="pointers--icon" src="./assets/illustration-financial-freedom.svg" alt="Money Jar">
+        <div class="pointer">
+          <div class="pointers-icon-container">
+            <img class="pointers--icon" src="./assets/illustration-financial-freedom.svg" alt="Money Jar">
+          </div>
+          <div class="pointer__text">
+            <h4 class="pointers--heading">Gain financial freedom</h4>
+            <p class="pointers--description">Start making money work for you. There’s nothing quite like earning while you sleep.</p>
+          </div>
         </div>
-        <h4 class="pointers--heading">Gain financial freedom</h4>
-        <p class="pointers--description">Start making money work for you. There’s nothing quite like earning while you sleep.</p>
   
-        <div class="pointers-icon-container">
-          <img class="pointers--icon" src="./assets/illustration-lifestyle.svg" alt="Cocktail Glass">
+        <div class="pointer">
+          <div class="pointers-icon-container">
+            <img class="pointers--icon" src="./assets/illustration-lifestyle.svg" alt="Cocktail Glass">
+          </div>
+          <div class="pointer__text">
+            <h4 class="pointers--heading">Choose your lifestyle</h4>
+            <p class="pointers--description">Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.</p>
+          </div>
+
         </div>
-        <h4 class="pointers--heading">Choose your lifestyle</h4>
-        <p class="pointers--description">Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.</p>
+
+        <div class="pointer">
+          <div class="pointers-icon-container">
+            <img class="pointers--icon" src="./assets/illustration-work-anywhere.svg" alt="Packed Up Car">
+          </div>
+          <div class="pointer__text">
+            <h4 class="pointers--heading">Work from anywhere</h4>
+            <p class="pointers--description">Selling online means not being pinned down. Want to work AND travel? Go for it!</p>
+          </div>
+
+        </div>
         
-        <div class="pointers-icon-container">
-          <img class="pointers--icon" src="./assets/illustration-work-anywhere.svg" alt="Packed Up Car">
-        </div>
-        <h4 class="pointers--heading">Work from anywhere</h4>
-        <p class="pointers--description">Selling online means not being pinned down. Want to work AND travel? Go for it!</p>
     </section>
 
     
     <section class="pricing row">
-      <h3 class="pricing__heading text-center">Our pricing plans</h3>
-      <p class="pricing__description text-center">We only make money when our creators make money. Our plans are always affordable, and 
-        it’s completely free to get started.</p>
-
-      <div class="pricing-container pricing-container--free">
-        <img class="icon-free" src="./assets/icon-free.svg" alt="Free Pricing">
-        <div class="pricing-text-container">
-          <h4>Dip your toe</h4>
-          <p>Just getting started? No problem at all! Our free plan will take you a long way.</p>
-          <h2>Free</h2>
-          <ul class="pricing__pointers pricing__pointers--free">
-            <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check-cyan.svg" alt="Checkmark">Unlimited products</li>
-            <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check-cyan.svg" alt="Checkmark">Basic analytics</li>
-            <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check-cyan.svg" alt="Checkmark">Limited marketplace exposure</li>
-            <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check-cyan.svg" alt="Checkmark">10% fee per transaction</li>
-          </ul>
-        </div>
+      <div class="pricing__header__container">
+        <h3 class="pricing__heading text-center">Our pricing plans</h3>
+        <p class="pricing__description text-center">We only make money when our creators make money. Our plans are always affordable, and 
+          it’s completely free to get started.</p>
       </div>
 
-      <div class="pricing-container pricing-container--paid">
-        <img class="icon-paid" src="./assets/icon-paid.svg" alt="Free Pricing">
-        <div class="pricing-text-container pricing-text-container--paid">
-          <h4>Dive right in</h4>
-          <p>Ready for the big time? Our paid plan will help you take your business to the next level.</p>
-          <div class="row paid--fee">
-            <h2>$25.00</h2>
-            <span class="month">/month</span>
+      <div class="pricing__options__container">
+        <div class="pricing-container pricing-container--free">
+          <img class="icon-free" src="./assets/icon-free.svg" alt="Free Pricing">
+          <div class="pricing-text-container pricing-text-container--right">
+            <h4>Dip your toe</h4>
+            <p>Just getting started? No problem at all! Our free plan will take you a long way.</p>
+            <h2>Free</h2>
+            <ul class="pricing__pointers pricing__pointers--free">
+              <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check-cyan.svg" alt="Checkmark">Unlimited products</li>
+              <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check-cyan.svg" alt="Checkmark">Basic analytics</li>
+              <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check-cyan.svg" alt="Checkmark">Limited marketplace exposure</li>
+              <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check-cyan.svg" alt="Checkmark">10% fee per transaction</li>
+            </ul>
           </div>
-          <ul class="pricing__pointers pricing__pointers--paid">
-            <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check.svg" alt="Checkmark">Custom domain</li>
-            <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check.svg" alt="Checkmark">Advanced analytics and reports</li>
-            <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check.svg" alt="Checkmark">High marketplace visibility</li>
-            <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check.svg" alt="Checkmark">5% fee per transaction</li>
-          </ul>
+        </div>
+  
+        <div class="pricing-container pricing-container--paid">
+          <img class="icon-paid" src="./assets/icon-paid.svg" alt="Free Pricing">
+          <div class="pricing-text-container pricing-text-container--paid">
+            <h4>Dive right in</h4>
+            <p>Ready for the big time? Our paid plan will help you take your business to the next level.</p>
+            <div class="row paid--fee">
+              <h2>$25.00</h2>
+              <span class="month">/month</span>
+            </div>
+            <ul class="pricing__pointers pricing__pointers--paid">
+              <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check.svg" alt="Checkmark">Custom domain</li>
+              <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check.svg" alt="Checkmark">Advanced analytics and reports</li>
+              <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check.svg" alt="Checkmark">High marketplace visibility</li>
+              <li class="pricing__pointers--points"><img class="pricing__pointers--checkmark" src="./assets/icon-check.svg" alt="Checkmark">5% fee per transaction</li>
+            </ul>
+          </div>
         </div>
       </div>
+      
     </section>
     </div>
   </main>
 
-  <footer class="footer container">
-    <h4 class="text-center">Get notified when we launch</h4>
+  <footer class="footer">
+    <div class="container">
+      <h3 class="text-center">Get notified when we launch</h3>
     <form action="#" class="row">
       <input class="email" type="text" name="email" id="email" placeholder="Email address">
       <button onclick="validateEmail()" type="submit" class="btn">Get notified</button>
+    </form>
+    <div class="signup-status text-center">
       <p id="success" class="success">Thank you for signing up!</p>
       <p id="warn" class="warn">Oops!  That doesn't look like an email address</p>
-    </form>
+    </div>
+    </div>
   </footer>
   <script src="./script.js"></script>
 </body>
