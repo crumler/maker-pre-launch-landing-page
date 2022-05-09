@@ -98,6 +98,8 @@ header { overflow: hidden; }
 .bg_img_right_container { display: none; }
 
 .header_text_container {
+  background-image: url(./assets/bg-hero-squiggle.svg);
+  background-size: cover;
   margin-top: 3.16em;
   /* border: 2px solid red; */
 }
