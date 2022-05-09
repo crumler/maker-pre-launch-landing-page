@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-With this project, I was finally able to work with a Figma design file (provided within this project's repository) that provided me with detailed information about colors and typography to assist me with developing this web page.
+With this project, I was finally able to work with a Figma design file that provided me with detailed information about colors and typography to assist me with developing this web page.
 
 Also, I became a bit more comfortable with CSS Grid: particularly, with the Header section, as well as ensuring that the "Pointers" section remained centered throughout all view widths.
 
