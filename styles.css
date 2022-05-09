@@ -252,6 +252,8 @@ form input {
   margin: 2.06em 0 1.6em 0;
 }
 
+.email:focus { outline: none; }
+
 .btn {
   cursor: pointer;
   width: 21.33em;
