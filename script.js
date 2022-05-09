@@ -4,6 +4,8 @@ let regex = new RegExp(/^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([
 const success = document.getElementById('success');
 const warning = document.getElementById('warn');
 
+// E-mail Validation function
+
 function validateEmail(emailField) {
   event.preventDefault();
 
