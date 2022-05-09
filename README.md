@@ -61,6 +61,6 @@ I'm also continuing to become more comfortable with determining rem vs. em units
 
 ## Author
 
-- Website - Chris Rumler
+- Name - Chris Rumler
 - Frontend Mentor - [@crumler](https://www.frontendmentor.io/profile/crumler)
 - Twitter - [@The_SER_Codes](https://twitter.com/The_SER_Codes)
